@@ -7,19 +7,32 @@
     <title>Cajero ATM</title>
 </head>
 <body>
+    <h4 id="Billetes1000">Billetes 1000: </h4>
+    <h4 id="Billetes500">Billetes 500: </h4>
+    <h4 id="Billetes200">Billetes 200: </h4>
+    <h4 id="Billetes100">Billetes 100: </h4>
+    <h4 id="Billetes50">Billetes 50: </h4>
+    <h4 id="Billetes20">Billetes 20: </h4>
+    <h4 id="Simulaciones">Numero de simulaciones: </h4>
     <div id="caja">
+        
         <div id="info" >
-            <input type="text" placeholder="Ingrese el Monto">
+            
+            <input type="number" placeholder="Ingrese el Monto" id="monto">
             <div id="Retirar">
-            <button name="button" id="btnRetirar" >Retirar</button>
+            <button name="button" id="btnRetirar">Retirar</button>
             </div>
         </div>
     <div  id="cajero">
         <img src="Imagenes/Cajero.png" width="700" height="700">
     </div>
-    <div id="simular">
-        <button name="button" id="btnSimular" >simular</button>
+    <div id="mensaje">
+        <p id="texto">Bienvenido</p>
     </div>
+    <div id="simular">
+        <button name="button" id="btnSimular" onclick="simular()">simular</button>
+    </div>
+    
 </div>
 
 </body>
